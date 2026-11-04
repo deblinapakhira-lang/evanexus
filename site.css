@@ -1,0 +1,15 @@
+/* EvaNexus site-wide styles. Page layout styles are inline in each page. */
+html{scroll-behavior:smooth}
+body{margin:0;background:#FBF7F1}
+a{color:#7A4F3A}a:hover{color:#B85C3E}
+a:focus-visible{outline:2px solid #B85C3E;outline-offset:3px}
+img{max-width:100%}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+
+/* Resources dropdown in the main menu */
+.enx-menu{visibility:hidden;opacity:0;transition:opacity .15s ease}
+.enx-dd:hover .enx-menu,.enx-dd:focus-within .enx-menu{visibility:visible;opacity:1}
+.enx-menu a:hover,.enx-menu a:focus-visible{background:#F5EEE4;color:#7A4F3A}
+
+/* Advisory: on wide screens, center the fourth challenge under the first three */
+@media (min-width: 1140px){.enx-center-last{grid-column:2;grid-row:2}}
